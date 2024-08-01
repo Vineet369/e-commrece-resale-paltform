@@ -41,26 +41,26 @@ const Header = () => {
             <div className='col-5'>
               <div className='header-upper-links d-flex align-item-center justify-content-between'>
                 <div>
-                  <Link className='d-flex alifn-item-center gap-10 text-white'>
-                  <TfiReload />
+                  <Link to="/compare-product" className='d-flex alifn-item-center gap-10 text-white'>
+                  <TfiReload size={40}/>
                   <p className='mb-0'>Compare <be /> Products</p>
                   </Link>
                 </div>
                 <div>
-                  <Link className='d-flex alifn-item-center gap-10 text-white'>
-                  <CiHeart />
+                  <Link to='/wishlist' className='d-flex alifn-item-center gap-10 text-white'>
+                  <CiHeart size={40}/>
                   <p className='mb-0'>Favourite <br /> Wishlist</p>
                   </Link>
                 </div>
                 <div>
-                  <Link className='d-flex alifn-item-center gap-10 text-white'>
-                  <CiUser />
+                  <Link to="/login" className='d-flex alifn-item-center gap-10 text-white'>
+                  <CiUser size={40}/>
                   <p className='mb-0'>Log in <br /> My Account</p>
                   </Link>
                 </div>
                 <div>
-                  <Link className='d-flex alifn-item-center gap-10 text-white'>
-                  <TiShoppingCart />
+                  <Link to='/cart' className='d-flex alifn-item-center gap-10 text-white'>
+                  <TiShoppingCart size={40}/>
                   <div className='d-flex flex-column'>
                     <span className='badge bg-white text-dark'>0</span>
                     <p className='mb-0'>Price</p>
@@ -92,7 +92,7 @@ const Header = () => {
                 <div className='menu-links'>
                   <div className='d-flex align-items-center gap-15'>
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="/store">Our Store</NavLink>
+                    <NavLink to="/product">Our Store</NavLink>
                     <NavLink to="/blogs">Blogs</NavLink>
                     <NavLink to="/contact">Contact</NavLink>
                   </div>

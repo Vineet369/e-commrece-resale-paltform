@@ -37,8 +37,8 @@ const SpecialProducts = () => {
                   </div>
                   <div className="prod-count mt-3">
                     <p>Products: 6</p>
-                  <div class="progress">
-                    <div class="progress-bar" 
+                  <div className="progress">
+                    <div className="progress-bar" 
                     role="progressbar" 
                     style={{width: "25%"}} 
                     aria-valuenow="25" 

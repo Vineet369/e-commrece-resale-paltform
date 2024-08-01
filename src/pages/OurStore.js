@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from '../components/Meta';
 import ReactStars from 'react-rating-stars-component';
+import ProductCard from '../components/ProductCard.js';
+
+import { FaGripLinesVertical } from "react-icons/fa6";
+import { HiMiniBars2 } from "react-icons/hi2";
+import { HiMiniBars3 } from "react-icons/hi2";
+import { HiMiniBars4 } from "react-icons/hi2";
+import Color from '../components/Color.js';
+
 
 const OurStore = () => {
+  const [grid, setGrid] = useState(4)
+  
+
   return (
     <>
       <Meta title={"Our Store"} />
@@ -66,14 +77,7 @@ const OurStore = () => {
                   </div>
                   <h5 className='sub-title'>Colors</h5>
                   <div>
-                    <ul className='colors ps-0'>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+                    <Color />
                   </div>
                   <h5 className='sub-title'>Sizes</h5>
                   <div className='form-check'>
@@ -174,10 +178,10 @@ const OurStore = () => {
               </div>
             </div>
             <div className='col-9'>
-              <div className='filter-sort-grid'>
-                <div className='d-flex justify-content align-items-center'>
+              <div className='filter-sort-grid mb-4'>
+                <div className='d-flex justify-content-between align-items-center'>
                 <div className='d-flex align-items-center gap-10'>
-                  <p className='mb-0'>Sort By:</p>
+                  <p className='mb-0 d-block'>Sort By:</p>
                   <select name='' className='form-control form-select' id=''>
                     <option value="manual">Featured</option>
                     <option value="best-selling" selected="selected">Best Selling</option>
@@ -189,6 +193,33 @@ const OurStore = () => {
                     <option value="created-descending">Date, new to old</option>
                   </select>
                 </div>
+                <div className='d-flex align-items-center gap-10'>
+                  <p className='totalproducts mb-0' style={{width: "100px"}}>24 Products</p>
+                  <div className='d-flex gap-10 align-items-center grid'>
+                  <FaGripLinesVertical onClick={() => {
+                    setGrid(3);
+                    }
+                    } />
+                  <HiMiniBars2 onClick={() => {
+                    setGrid(4);
+                    }
+                    }/>
+                  <HiMiniBars3 onClick={() => {
+                    setGrid(6);
+                    }
+                    }/>
+                  <HiMiniBars4 onClick={() => {
+                    setGrid(12);
+                    }
+                    }/>
+
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div className='products-list pb-5'>
+                <div className='d-flex flex-wrap gap-10'>
+                <ProductCard grid={grid} />
                 </div>
               </div>
             </div>
