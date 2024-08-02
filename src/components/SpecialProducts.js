@@ -8,12 +8,12 @@ const SpecialProducts = () => {
       <div className='special-product-card'>
         <div className='d-flex justify-content-between'>
             <div>
-                <img src='images/small-chair.jpg' className='img-fluid' alt='chair' />
+                <img src='images/shoe1.jpg' className='famous-image img-fluid' alt='chair' />
             </div>
             <div className='special-product-content'>
                 <h5 className='brand'>LG</h5>
                 <h6 className='title'>
-                    Trusted LG TVs for resale 
+                    Best brand shoes for resale 
                 </h6>
                 <ReactStars
                     count={5}

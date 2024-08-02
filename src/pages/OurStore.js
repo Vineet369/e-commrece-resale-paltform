@@ -134,11 +134,11 @@ const OurStore = () => {
                 <div>
                   <div className='random-products mb-3 d-flex'>
                     <div className='w-50'>
-                      <img src='images/small-chair.jpg' className='img-fluid' alt='chair' />
+                      <img src='images/small-chair.jpg' className='img-fluid p-1' alt='chair' />
 
                     </div>
                     <div className='w-50'>
-                      <h5>crayons</h5>
+                      <h5>Chair</h5>
                       <ReactStars
                         count={5}
                         // onChange={ratingChanged}
@@ -149,13 +149,13 @@ const OurStore = () => {
                       />
                       
                       <b>
-                        150/-
+                        99/-
                       </b>
                     </div>
                     </div>
                     <div className='random-products mb-3 d-flex'>
                     <div className='w-50'>
-                      <img src='images/small-chair.jpg' className='img-fluid' alt='chair' />
+                      <img src='images/crayons.jpg' className='img-fluid p-1' alt='chair' />
 
                     </div>
                     <div className='w-50'>
@@ -170,7 +170,7 @@ const OurStore = () => {
                       />
                       
                       <b>
-                        150/-
+                        15/-
                       </b>
                     </div>
                   </div>
@@ -219,6 +219,9 @@ const OurStore = () => {
               </div>
               <div className='products-list pb-5'>
                 <div className='d-flex flex-wrap gap-10'>
+                <ProductCard grid={grid} />
+                <ProductCard grid={grid} />
+                <ProductCard grid={grid} />
                 <ProductCard grid={grid} />
                 </div>
               </div>

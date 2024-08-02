@@ -29,7 +29,7 @@ const Header = () => {
           <div className='row'>
             <div className='col-2'>
               <h2>
-                <Link className='text-white'>Devloper Section</Link>
+                <Link to='/' className='text-white'>Sustainable Store</Link>
               </h2>
             </div>
             <div className='col-5'>
@@ -41,25 +41,25 @@ const Header = () => {
             <div className='col-5'>
               <div className='header-upper-links d-flex align-item-center justify-content-between'>
                 <div>
-                  <Link to="/compare-product" className='d-flex alifn-item-center gap-10 text-white'>
-                  <TfiReload size={40}/>
-                  <p className='mb-0'>Compare <be /> Products</p>
+                  <Link to="/compare-product" className='d-flex align-items-center gap-10 text-white'>
+                  <TfiReload size={30}/>
+                  <p className='mb-0'>Compare<br />Products</p>
                   </Link>
                 </div>
                 <div>
-                  <Link to='/wishlist' className='d-flex alifn-item-center gap-10 text-white'>
+                  <Link to='/wishlist' className='d-flex align-items-center gap-10 text-white'>
                   <CiHeart size={40}/>
                   <p className='mb-0'>Favourite <br /> Wishlist</p>
                   </Link>
                 </div>
                 <div>
-                  <Link to="/login" className='d-flex alifn-item-center gap-10 text-white'>
-                  <CiUser size={40}/>
+                  <Link to="/login" className='d-flex align-items-center gap-10 text-white'>
+                  <CiUser size={35}/>
                   <p className='mb-0'>Log in <br /> My Account</p>
                   </Link>
                 </div>
                 <div>
-                  <Link to='/cart' className='d-flex alifn-item-center gap-10 text-white'>
+                  <Link to='/cart' className='d-flex align-items-center gap-10 text-white'>
                   <TiShoppingCart size={40}/>
                   <div className='d-flex flex-column'>
                     <span className='badge bg-white text-dark'>0</span>
@@ -83,9 +83,9 @@ const Header = () => {
                   <RxDropdownMenu size={25} /><span className='me-5 d-inline-block'>Categories</span>
                   </button>
                   <ul className="dropdown-menu" aria-labelledby='deopdownMenuButtonl' >
-                    <li><Link className="dropdown-item text-white" to="#">Action</Link></li>
-                    <li><Link className="dropdown-item text-white" to="#">Another action</Link></li>
-                    <li><Link className="dropdown-item text-white" to="#">Something else here</Link></li>
+                    <li><Link className="dropdown-item text-white" to="#">Daily Needs</Link></li>
+                    <li><Link className="dropdown-item text-white" to="#">Travel Essentials</Link></li>
+                    <li><Link className="dropdown-item text-white" to="#">Expensive Items</Link></li>
                   </ul>
                 </div>  
                 </div>  

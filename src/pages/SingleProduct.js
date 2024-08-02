@@ -5,15 +5,14 @@ import ProductCard from '../components/ProductCard';
 import ReactStars from 'react-rating-stars-component';
 import ReactImageZoom from 'react-image-zoom';
 
-
 const SingleProduct = () => {
     const props = {
         width: 400, 
         height: 500, 
         zoomWidth: 500, 
-        img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fphotos%2Fheadphone&psig=AOvVaw2Y6ciu5Vm8FEV5f61F4mHz&ust=1722623985709000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIC-7cm41IcDFQAAAAAdAAAAABAK"};
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZgsKg71US7HSjUBrL1F0TmNuFBZPZaKy0Dw&s"};
 
-    const [orderedProduct,setOrderedProduct] = useState(false)
+    const [orderedProduct,setOrderedProduct] = useState(true)
   return (
     <div>
       <Meta title={"Product Name"} />
@@ -28,13 +27,36 @@ const SingleProduct = () => {
                                 <ReactImageZoom {...props} />
                             </div>
                         </div>
-                        <div className='other-product-images d-flex flex-wrapgap-15'>
-                            <div></div>
+                        <div className='other-product-images d-flex flex-wrap gap-15'>
+                            <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZgsKg71US7HSjUBrL1F0TmNuFBZPZaKy0Dw&s' className='img-fluid' /></div>
+                            <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZgsKg71US7HSjUBrL1F0TmNuFBZPZaKy0Dw&s' className='img-fluid' /></div>
+                            <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZgsKg71US7HSjUBrL1F0TmNuFBZPZaKy0Dw&s' className='img-fluid' /></div>
+                            <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZgsKg71US7HSjUBrL1F0TmNuFBZPZaKy0Dw&s' className='img-fluid' /></div>
                         </div>
                     </div>
                     <div className='col-6'>
-
-
+                        <div className='main-product-details'>
+                            <div className='border-bottom'>
+                                <h3 className='title'>
+                                    Stereo headphones
+                                </h3>
+                            </div>
+                            <div className='border-bottom'>
+                                <p className='price'>400/-</p>
+                            </div>
+                        </div>
+                            <div className='d-flex align-items-ceenter gap-10'>
+                            <ReactStars
+                                count={5}
+                                // onChange={ratingChanged}
+                                size={24}
+                                value="4"
+                                edit={false}
+                                activeColor="#ffd700"
+                            />
+                            <p className='mb-0'>(2 reviews)</p>
+                            </div>
+                            <a href='#review'>Write a review</a>
                     </div>
                 </div>
             </div>
@@ -71,16 +93,16 @@ const SingleProduct = () => {
                                     <p className='mb-0'>Based on 4 reviews</p>
                                  </div>
                                  </div>
-                                 {orderedProduct && (
+                                 {/* {orderedProduct && (
                                     <div>
-                                        <a className='text-dark text-decoration-underline' href="">
+                                        <a className='text-dark text-decoration-underline justify-content-end' href="">
                                             Write a review
                                         </a>
                                     </div>
-                                 )}
+                                 )} */}
                             </div>
                             <h4>Write a review</h4>
-                            <div className='review-form py-4'>
+                            <div id='review' className='review-form py-4'>
                             <form action='' className='d-flex flex-column gap-15'>
                                <div>
                                <ReactStars

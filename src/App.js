@@ -24,7 +24,7 @@ function App() {
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
           <Route path='product' element={<OurStore />} />
-          <Route path=':id' element={<SingleProduct />} />
+          <Route path='product/:id' element={<SingleProduct />} />
           <Route path='blogs' element={<Blog />} />
           <Route path='blog/:id' element={<SingleBlog />} />
           <Route path='compare-product' element={<CompareProduct />} />

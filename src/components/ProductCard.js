@@ -14,15 +14,15 @@ const ProductCard = (props) => {
   return (
     <>
       <div className={`${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}>
-      <Link to=':id' className='product-card position-relative'>
+      <Link to=':id' className='product-card position-relative mb-2'>
         <div className='wishlist position-absolute'>
           <Link>
           <CiHeart />
           </Link>
         </div>
         <div className='product-image'>
-          <img src='/images/1.png' className='img-fluid' alt='product image' />
           <img src='/images/small-cycle.jpg' className='img-fluid' alt='product image' />
+          <img src='/images/cycle.jpeg' className='img-fluid' alt='product image' />
         </div>
         <div className='product-details'>
           <h6 className='brand'>AVON</h6>
@@ -57,14 +57,14 @@ const ProductCard = (props) => {
       
     </div>
     <div className={`${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}>
-      <div className='product-card position-relative'>
+      <Link to=':id' className='product-card position-relative'>
         <div className='wishlist position-absolute'>
           <Link>
           <CiHeart />
           </Link>
         </div>
         <div className='product-image'>
-          <img src='/images/1.png' className='img-fluid' alt='product image' />
+          <img src='/images/cycle.jpeg' className='img-fluid' alt='product image' />
           <img src='/images/small-cycle.jpg' className='img-fluid' alt='product image' />
         </div>
         <div className='product-details'>
@@ -96,7 +96,7 @@ const ProductCard = (props) => {
             </Link>
           </div>
         </div>
-      </div>
+      </Link>
       
     </div>
     </>

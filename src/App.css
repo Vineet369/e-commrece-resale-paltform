@@ -198,7 +198,7 @@ footer .input-group-text {
   font-weight: 500;
   line-height: 12px;
   text-transform: none;
-  letter-spacing: -2px;
+  letter-spacing: 1px;
   
 }
 
@@ -212,6 +212,10 @@ footer .input-group-text {
 
 .small-banner {
   width: 49%;
+}
+.small-banner:first-child img{
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -318,23 +322,33 @@ footer .input-group-text {
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
+  height: 100%;
+  
 }
 
 .product-card .product-image {
-  height: 180px;
-  max-width: 150px;
+  height: 150px;
+  width: 250px;
+  
 }
 
 .product-card .product-image img {
-  object-fit:contain
+  object-fit:fill;
+  height: 150px;
+  width: 250px;
+  
 }
 
 .product-card .product-image > img:last-child {
   display: none;
+  height: 150px;
+  width: 250px;
 }
 
 .product-card:hover .product-image > img:nth-child(1) {
   display: none;
+  border-radius: 10px;
+
 }
 
 .product-card:hover .product-image > img:last-child {
@@ -386,6 +400,11 @@ footer .input-group-text {
   border-radius: 10px;
   background-color: white;
 }
+.famous-image{
+  height: 320px;
+  width: 290px;
+}
+
 
 /* special product end */
 
@@ -395,10 +414,13 @@ footer .input-group-text {
 .famous-card .famous-content{
   top: 20%;
   left: 10%;
+  
 }
 
 .famous-card img{
   border-radius: 10px;
+  height: 500px;
+  margin-inline-end: 30px;
 }
 
 .famous-content h5{
@@ -408,17 +430,35 @@ footer .input-group-text {
   color: white;
   margin-bottom: 7px;
 }
+.famous-wrapper .famous-card:nth-child(2) .famous-content h5 {
+  line-height: 20px;  
+  font-weight: 400px;
+  color: rgb(98, 80, 0);
+  margin-bottom: 7px;
+}
 .famous-content h6{
   font-size: 24px;
   line-height: 38px;
   font-weight: 500;
   color: white;
 }
+.famous-wrapper .famous-card:nth-child(2) .famous-content h6 {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500;
+  color: rgb(98, 80, 0);
+}
 .famous-content p{
   font-size: 16px;
   line-height: 24px;
   font-weight: 100;
   color: white;
+}
+.famous-wrapper .famous-card:nth-child(2) .famous-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+  color: rgb(4, 4, 4);
 }
 
 /* Famous card end */
@@ -657,13 +697,51 @@ footer .input-group-text {
   padding: 20px;
   border-radius: 10px;
 }
+.main-product-image img{
+  width: 100% !important;
+  height: 500px !important;
+  object-fit: cover;
+}
 
 .main-product-image>div{
-  border: 1px solidtgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.1);
 }
-.other-product-image>div{
+.main-product-image .js-image-zoom__zoomed-image{
+  left: 230px !important;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.other-product-images{
   padding: 20px;
-  border: 1px solidtgba(0,0,0,0.1);
+  background-color: #fff;
+
+}
+.other-product-images>div{
+  padding: 20px;
+  border: 1px solid rgba(0,0,0,0.1);
+  width: 48%;
+}
+.main-product-details {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.border-bottom{
+  border-bottom: 1px solid rgba(0,0,0,0.25);  
+}
+.main-product-detailsh3.title{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 10px;
+}
+.main-product-details p.price{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .description-wrapper h4,

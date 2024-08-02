@@ -55,16 +55,16 @@ const Contact = () => {
                     <ul className='ps-0 '>
                       <li className='mb-3 d-flex gap-15 align-items-center'>
                       <IoMdHome className='fs-5'/>
-                      <address className='mb-0'>sdfsdfdsfsdf</address>
+                      <address className='mb-0'>Mumbai</address>
                       </li>
                       <li className='mb-3 d-flex gap-15 align-items-center'>
                         <FaPhoneAlt className='fs-5'/>
-                        <a href="tel:+9165658686">+91 64964648</a>
+                        <a href="tel:+9165658686">+91 6496425648</a>
                       </li>
                       <li className='mb-3 d-flex gap-15 align-items-center'>
                         <CiMail className='fs-5'/>
                         <a href='mailto:dsfefeafcasfd@gmail.com'>
-                          idjfjfoj@gmail.com
+                          sustainablestore_SDG@gmail.com
                         </a>
                       </li>
                       <li className='mb-3 d-flex gap-15 align-items-center'>

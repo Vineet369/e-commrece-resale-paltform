@@ -38,9 +38,9 @@ const Home = () => {
                 className='img-fluid rounded-3'
                 alt='small-banner'/>
                 <div className='small-banner-content position-absolute'>
-                  <h4>Earn for old items</h4>
-                  <h5>Sofa set</h5>
-                  <p>From 999/- only</p>
+                  <h4 className='text-white'>Earn for old items</h4>
+                  <h5 className='text-white'>Books</h5>
+                  <p className='text-white'>From 9/- only</p>
                 </div>
               </div>
               <div className='small-banner position-relative'>
@@ -48,9 +48,9 @@ const Home = () => {
                 className='img-fluid rounded-3'
                 alt='small-banner'/>
                 <div className='small-banner-content position-absolute'>
-                  <h4>Earn for old items</h4>
-                  <h5>Sofa set</h5>
-                  <p>From 999/- only</p>
+                  <h4 className='text-white'>Earn for old items</h4>
+                  <h5 className='text-white'>Bicycle</h5>
+                  <p className='text-white'>From 999/- only</p>
                 </div>
               </div>
               <div className='small-banner mt-2 position-relative'>
@@ -64,18 +64,18 @@ const Home = () => {
                 </div>
               </div>
               <div className='small-banner mt-2 position-relative'>
-                <img src="/images/small-cycle.jpg" 
+                <img src="/images/wires.jpg" 
                 className='img-fluid rounded-3'
                 alt='small-banner'/>
                 <div className='small-banner-content position-absolute'>
-                  <h4>Earn for old items</h4>
-                  <h5>Sofa set</h5>
-                  <p>From 999/- only</p>
+                  <h4 className='text-white'>Earn for old items</h4>
+                  <h5 className='text-white'>Wires</h5>
+                  <p className='text-white'>From 39/- only</p>
                 </div>
                 </div>
               </div>
             </div>
-          </div>
+          </div>  
         </div>
       </section>
       <section className='home-wrapper-2 py-5'>
@@ -84,35 +84,35 @@ const Home = () => {
             <div className='col-12'>
               <div className='services d-flex align-items-center justify-content-between'>
                 <div className='d-flex align-items-center gap-15'>
-                  <FaTruckFast />
+                  <FaTruckFast size={50}/>
                   <div>
                     <h6>Free Shipping</h6>
                     <p className='mb-0'>From all orders over 500/-</p>
                   </div>
                 </div>
                 <div className='d-flex align-items-center gap-15'>
-                <TfiGift />
+                <TfiGift size={50}/>
                   <div>
                     <h6>Daialy surprise offer</h6>
                     <p className='mb-0'>Save upto 65%</p>
                   </div>
                 </div>
                 <div className='d-flex align-items-center gap-15'>
-                <MdHeadphones />
+                <MdHeadphones size={50}/>
                   <div>
                     <h6>27/7 customer support</h6>
                     <p className='mb-0'>Shop anytime</p>
                   </div>
                 </div>
                 <div className='d-flex align-items-center gap-15'>
-                <BiSolidOffer />
+                <BiSolidOffer size={50}/>
                   <div>
                     <h6>Affordable price</h6>
                     <p className='mb-0'>Negotiable</p>
                   </div>
                 </div>
                 <div className='d-flex align-items-center gap-15'>
-                <CiCreditCard1 />
+                <CiCreditCard1 size={50}/>
                   <div>
                     <h6>Secure Payment</h6>
                     <p className='mb-0'>Fully reliable</p>
@@ -135,8 +135,8 @@ const Home = () => {
                     </h6>
                     <p>10 items</p>
                   </div>
-                  <div>
-                    <img src='images/camera.jpg' />
+                  <div className='p-1'>
+                    <img className='img-fluid' src='images/camera.jpg' />
                   </div>
                 </div>
                 <div className='d-flex gap-30 align-items-center'>
@@ -146,30 +146,30 @@ const Home = () => {
                     </h6>
                     <p>10 items</p>
                   </div>
-                  <div>
-                    <img src='images/tv.jpg' />
+                  <div className='p-1'>
+                    <img className='img-fluid' src='images/tv.jpeg' />
                   </div>
                 </div>
                 <div className='d-flex gap-30 align-items-center'>
                   <div>
                     <h6>
-                      Watches
+                      Home decoration
                     </h6>
                     <p>10 items</p>
                   </div>
-                  <div>
-                    <img src='images/watch.jpg' />
+                  <div className='p-1'>
+                    <img className='img-fluid' src='images/vase.jpg' />
                   </div>
                 </div>
                 <div className='d-flex gap-30 align-items-center'>
                   <div>
                     <h6>
-                      Music
+                      Glasses
                     </h6>
                     <p>10 items</p>
                   </div>
-                  <div>
-                    <img src='images/camera.jpg' />
+                  <div className='p-1'> 
+                    <img className='img-fluid' src='images/glasses.jpeg' />
                   </div>
                 </div>
                 <div className='d-flex gap-30 align-items-center'>
@@ -179,8 +179,8 @@ const Home = () => {
                     </h6>
                     <p>10 items</p>
                   </div>
-                  <div>
-                    <img src='images/camera.jpg' />
+                  <div className='p-1'>
+                    <img className='img-fluid' src='images/camera.jpg' />
                   </div>
                 </div>
                 <div className='d-flex gap-30 align-items-center'>
@@ -190,30 +190,30 @@ const Home = () => {
                     </h6>
                     <p>10 items</p>
                   </div>
-                  <div>
-                    <img src='images/tv.jpg' />
+                  <div className='p-1'>
+                    <img className='img-fluid' src='images/tv.jpeg' />
                   </div>
                 </div>
                 <div className='d-flex gap-30 align-items-center'>
                   <div>
                     <h6>
-                      Watches
+                      Home decoration
                     </h6>
                     <p>10 items</p>
                   </div>
-                  <div>
-                    <img src='images/watch.jpg' />
+                  <div className='p-1'>
+                    <img className='img-fluid' src='images/vase.jpg' />
                   </div>
                 </div>
                 <div className='d-flex gap-30 align-items-center'>
                   <div>
                     <h6>
-                      Music
+                      Glasses
                     </h6>
                     <p>10 items</p>
                   </div>
-                  <div>
-                    <img src='images/camera.jpg' />
+                  <div className='p-1'>
+                    <img className='img-fluid' src='images/glasses.jpeg' />
                   </div>
                 </div>
               </div>
@@ -235,30 +235,30 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className='famous-wrapper py-5 home-wrapper-2'>
+      <section className='famous-wrapper bg-white py-5 home-wrapper-2'>
         <div className='container-xxl'>
-          <div className='col-3'>
+          <div className='col-3 d-flex w-100'>
             <div className='famous-card position-relative'>
-              <img className='img-fluid' src='images/small-books.jpg' alt='famous' />
+              <img className='img-fluid' src='images/famous-watch.jpg' alt='famous' />
               <div className='famous-content position-absolute'>
-                <h5>Big Screen</h5>
-                <h6>Smart Watch Series</h6>
-                <p>From 599/- </p>
+                <h5>Unused product with original box</h5>
+                <h6>Watch Series</h6>
+                <p>From 499/- </p>
               </div>
             </div>
             <div className='famous-card position-relative'>
-              <img className='img-fluid' src='images/small-chair.jpg' alt='famous' />
+              <img className='img-fluid' src='images/famous-camera.jpg' alt='famous' />
               <div className='famous-content position-absolute'>
-                <h5>Big Screen</h5>
-                <h6>Smart Watch Series</h6>
-                <p>From 599/- </p>
+                <h5>Almost New</h5>
+                <h6>Camera Series</h6>
+                <p>From 1999/- </p>
               </div>
             </div>
             <div className='famous-card position-relative'>
-              <img className='img-fluid' src='images/small-cycle.jpg' alt='famous' />
+              <img className='img-fluid' src='images/famous-shelf.jpg' alt='famous' />
               <div className='famous-content position-absolute'>
-                <h5>Big Screen</h5>
-                <h6>Smart Watch Series</h6>
+                <h5>Good Quality Material Made</h5>
+                <h6>Wooden Items Series</h6>
                 <p>From 599/- </p>
               </div>
             </div>
@@ -280,7 +280,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className='popular-wrapper py-5 home-wrapper-2'>
+      {/* <section className='popular-wrapper py-5 home-wrapper-2'>
         <div className='container-xxl'>
           <div className='row'>
             <div className='col-12'>
@@ -302,33 +302,59 @@ const Home = () => {
           </div>
             
         </div>
-      </section>
+      </section> */}
       <section className='marquee-wrapper py-5'>
         <div className='container-xxl'>
           <div className='row'>
             <div className='col-12'>
+              <div>
+                <h3 className='mb-3'>Remember the Sustainable Development Goals</h3>
+              </div>
               <div className='marquee-inner-wrapper card-wrapper'>
                 <Marquee className='d-flex'>
                   <div className='mx-4 w-25'>
+                    <img className='img-fluid' src='images/sdg1.png' />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img className='img-fluid' src='images/sdg2.jpeg' />
 
                   </div>
                   <div className='mx-4 w-25'>
+                    <img className='img-fluid' src='images/sdg3.png' />
 
                   </div>
                   <div className='mx-4 w-25'>
+                    <img className='img-fluid' src='images/sdg4.png' />
 
                   </div>
                   <div className='mx-4 w-25'>
+                    <img className='img-fluid' src='images/sdg5.png' />
 
                   </div>
                   <div className='mx-4 w-25'>
+                    <img className='img-fluid' src='images/sdg6.png' />
 
                   </div>
                   <div className='mx-4 w-25'>
-
+                    <img className='img-fluid' src='images/sdg8.png' />
                   </div>
                   <div className='mx-4 w-25'>
-
+                    <img className='img-fluid' src='images/sdg9.png' />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img className='img-fluid' src='images/sdg10.png' />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img className='img-fluid' src='images/sdg11.png' />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img className='img-fluid' src='images/sdg12.png' />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img className='img-fluid' src='images/sdg15.png' />
+                  </div>
+                  <div className='mx-4 w-25'>
+                    <img className='img-fluid' src='images/sdg16.png' />
                   </div>
                 </Marquee>
               </div>
