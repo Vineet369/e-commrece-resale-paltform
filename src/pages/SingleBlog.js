@@ -3,7 +3,7 @@ import BreadCrumb from '../components/BreadCrumb';
 import Meta from '../components/Meta';
 import { Link } from 'react-router-dom';
 
-import { FaArrowLeftLong } from "react-icons/fa6";
+// import { FaArrowLeftLong } from "react-icons/fa6";
 
 
 const SingleBlog = () => {
