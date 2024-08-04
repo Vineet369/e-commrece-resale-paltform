@@ -4,7 +4,7 @@ import Meta from '../components/Meta';
 import ReactStars from 'react-rating-stars-component';
 import ProductCard from '../components/ProductCard.js';
 
-// import { FaGripLinesVertical } from "react-icons/fa6";
+import { FaGripLinesVertical } from "react-icons/fa6";
 import { HiMiniBars2 } from "react-icons/hi2";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { HiMiniBars4 } from "react-icons/hi2";

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Marquee from 'react-fast-marquee'
 import BlogCard from '../components/BlogCard';
 
-// import { FaTruckFast } from "react-icons/fa6";
+import { FaTruckFast } from "react-icons/fa6";
 import { TfiGift } from "react-icons/tfi";
 import { MdHeadphones } from "react-icons/md";
 import { BiSolidOffer } from "react-icons/bi";
