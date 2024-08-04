@@ -8,8 +8,8 @@ import { IoMdRemoveCircleOutline } from "react-icons/io";
 const Wishlist = () => {
   return (
     <>
-      <Meta title={"Compare Products"} />
-        <BreadCrumb title="Compare Products" />
+      <Meta title={"Wishlist"} />
+        <BreadCrumb title="Wishlist" />
         <div className='wishlist-wrapper home-wrapper-2 py-5'>
             <div className='container-xxl'>
                 <div className='row'>

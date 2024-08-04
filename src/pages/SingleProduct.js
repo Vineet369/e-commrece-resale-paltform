@@ -143,7 +143,7 @@ const SingleProduct = () => {
                     </div>
                 </div>
             </section>
-            <section className='popular-wrapper py-5 home-wrapper-2'>
+            {/* <section className='popular-wrapper py-5 home-wrapper-2'>
         <div className='container-xxl'>
           <div className='row'>
             <div className='col-12'>
@@ -163,7 +163,7 @@ const SingleProduct = () => {
           </div>
             
         </div>
-      </section>
+      </section> */}
             </div>
     </div>
   )
